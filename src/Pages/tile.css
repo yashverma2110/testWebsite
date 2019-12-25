@@ -1,0 +1,23 @@
+.tile {
+  background-color: rgb(67, 67, 67, 0.75);
+
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.8);
+}
+
+.tile > h3 {
+  color: white;
+  padding: 20px;
+  font-family: "Copse", light;
+  font-size: 1.2em;
+}
+
+.tile > a {
+  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
+}
