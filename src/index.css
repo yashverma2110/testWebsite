@@ -45,7 +45,7 @@ header {
   padding: 20px;
   color: black;
   font-family: "Copse", serif;
-  text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 .flex_box > p > span {
@@ -72,7 +72,6 @@ header > h1 > a {
   background-color: black;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.8);
 }
 
 .blur {
@@ -82,9 +81,9 @@ header > h1 > a {
 #logo {
   padding-left: 50px;
   padding-top: 28px;
-  font-family: "Ma Shan Zheng", cursive;
+  font-family: "Crimson Text", serif;
   font-size: 2.3em;
-  text-shadow: 3px 3px rgb(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 1px rgb(255, 255, 255, 0.7);
   animation-name: logo;
   animation-duration: 2s;
   letter-spacing: 5px;

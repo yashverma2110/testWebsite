@@ -12,10 +12,10 @@
 }
 
 #log-in > label {
-  font-family: "Sedgwick Ave", cursive;
-  font-size: 0.9em;
+  font-family: "Crimson Text", serif;
+  font-size: 1em;
   margin-top: 20px;
-  padding: 0px 10px 15px 0px;
+  padding: 0px 10px 10px 0px;
   letter-spacing: 2px;
 }
 
@@ -43,12 +43,12 @@
 }
 
 #show-pass {
-  font-family: "Sedgwick Ave", cursive;
+  font-family: "Crimson Text", serif;
   margin-top: 15px;
   letter-spacing: 2px;
   display: flex;
   flex-direction: column;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 #show-pass > input {
