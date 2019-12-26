@@ -4,7 +4,7 @@ import Tile from "./Tile";
 function Home() {
   return (
     <section>
-      <div className="flex_box">
+      <div id="flex-reverse" className="flex_box">
         <Tile />
         <p>
           <span>Companies:</span>

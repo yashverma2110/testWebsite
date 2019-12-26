@@ -10,17 +10,7 @@ body {
   background-size: cover;
 }
 
-#center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: none;
-}
-
 header {
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -32,6 +22,48 @@ header {
     #434343,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+#flex-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flex_box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+}
+
+.flex_box > p {
+  padding: 20px;
+  color: black;
+  font-family: "Copse", serif;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+.flex_box > p > span {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 2em;
+  font-family: "Kulim Park", sans-serif;
+}
+
+section {
+  margin: 20px;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
 }
 
 header > h1 > a {
@@ -95,35 +127,6 @@ header > nav {
   transform: scale(0.8);
 }
 
-section {
-  margin: 50px 50px 90px 50px;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
-}
-
-.flex_box {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  justify-content: space-around;
-  padding: 18px;
-  background-color: white;
-}
-
-.flex_box > p {
-  padding: 40px;
-  color: black;
-  font-family: "Copse", serif;
-  text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.5);
-  max-width: 600px;
-}
-
-.flex_box > p > span {
-  font-size: 2.5em;
-  color: black;
-  letter-spacing: 1px;
-  font-family: "Kulim Park", sans-serif;
-}
-
 .lg-back {
   background-color: #fbeec1;
   color: black;
@@ -135,4 +138,51 @@ section {
   height: 300px;
   width: 300px;
   box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
+}
+
+/* Making website responsive for Desktop */
+
+@media only screen and (min-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  section {
+    margin: 50px 50px 90px 50px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
+  }
+
+  #flex-reverse {
+    flex-direction: row;
+  }
+
+  .flex_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    padding: 18px;
+    background-color: white;
+  }
+
+  .flex_box > p {
+    padding: 40px;
+    max-width: 600px;
+  }
+
+  .flex_box > p > span {
+    font-size: 2.5em;
+  }
+
+  img {
+    padding-right: 10px;
+  }
+
+  #logo {
+    padding-top: 50px;
+  }
 }

@@ -4,14 +4,14 @@ import Stu_signup from "./Pages/Student-signup";
 import Com_signup from "./Pages/Company-signup";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
       <Header />
       <section id="center">
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/login" component={Login} exact />
@@ -19,7 +19,7 @@ function App() {
             <Route path="/company/login" component={Login} exact />
             <Route path="/company/signup" component={Com_signup} exact />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </section>
     </div>
   );

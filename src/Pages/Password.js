@@ -15,7 +15,7 @@ class Password extends Component {
   render() {
     return (
       <div id="show-pass">
-        <label>Password</label>
+        <label style={{ paddingBottom: "10px" }}>Password</label>
         <input type={this.state.hidden ? "password" : "text"} />
         <div id="check-box">
           <input id="check" type="checkbox" onClick={this.showPass} />

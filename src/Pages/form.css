@@ -1,30 +1,28 @@
 #log-in {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   background: white;
-  margin: 100px 100px 320px 100px;
-  padding: 50px;
-  box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
-  width: 600px;
+  padding-top: 20px;
 }
 
 #log-in > h2 {
   font-family: "Copse", serif;
   font-size: 2em;
-  margin: 0px 20px 20px 0px;
 }
 
 #log-in > label {
   font-family: "Sedgwick Ave", cursive;
-  font-size: 1.2em;
+  font-size: 0.9em;
   margin-top: 20px;
-  padding: 0px 20px 8px 0px;
+  padding: 0px 10px 15px 0px;
   letter-spacing: 2px;
 }
 
 #log-in > input {
   padding: 5px;
   border-radius: 7px;
+  width: 300px;
 }
 
 #log-in > button {
@@ -50,7 +48,7 @@
   letter-spacing: 2px;
   display: flex;
   flex-direction: column;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 #show-pass > input {
@@ -64,5 +62,17 @@
 }
 
 #check-box > label {
-  margin-left: 10px;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 768px) {
+  #log-in {
+    margin: 100px 100px 320px 100px;
+    padding: 50px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.4);
+    width: 600px;
+  }
+
+  #log-in > input {
+    width: 500px;
+  }
 }
