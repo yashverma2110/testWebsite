@@ -1,22 +1,25 @@
 import React from "react";
+import { HashRouter, Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <h1 id="logo">
-        <a href="/">
-          quick
-          <span>[Silicon]</span>
-        </a>
-      </h1>
-      <nav>
-        <a className="btn" href="/login">
-          Log In
-        </a>
-        <a className="btn" href="/signup">
-          Sign Up
-        </a>
-      </nav>
+      <HashRouter>
+        <h1 id="logo">
+          <Link to="/">
+            quick
+            <span>[Silicon]</span>
+          </Link>
+        </h1>
+        <nav>
+          <Link className="btn" to="/login">
+            Log In
+          </Link>
+          <Link className="btn" to="/signup">
+            Sign Up
+          </Link>
+        </nav>
+      </HashRouter>
     </header>
   );
 }
